@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://the-one-api.dev/v2/movie/5cd95395de30eff6ebccde5b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer OW4rssr_irBabV-4Avys
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - the-one-api.dev
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 12 Mar 2023 23:04:27 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      Content-Security-Policy:
+      - 'default-src ''self'';base-uri ''self'';block-all-mixed-content;font-src ''self''
+        https: data:;frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      X-Dns-Prefetch-Control:
+      - 'off'
+      Expect-Ct:
+      - max-age=0
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - no-referrer
+      X-Xss-Protection:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '84'
+      X-Ratelimit-Reset:
+      - '1678662397'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '274'
+      Etag:
+      - W/"112-NVaVyMNdyPCxy2GfDss7/ZeeuMQ"
+    body:
+      encoding: UTF-8
+      string: '{"docs":[{"_id":"5cd95395de30eff6ebccde5b","name":"The Two Towers","runtimeInMinutes":179,"budgetInMillions":94,"boxOfficeRevenueInMillions":926,"academyAwardNominations":6,"academyAwardWins":2,"rottenTomatoesScore":96}],"total":1,"limit":1000,"offset":0,"page":1,"pages":1}'
+  recorded_at: Sun, 12 Mar 2023 23:04:27 GMT
+recorded_with: VCR 6.1.0

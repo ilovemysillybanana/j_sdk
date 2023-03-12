@@ -1,0 +1,136 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://the-one-api.dev/v2/movie/5cd95395de30eff6ebccde56
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer OW4rssr_irBabV-4Avys
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - the-one-api.dev
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 12 Mar 2023 23:25:19 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      Content-Security-Policy:
+      - 'default-src ''self'';base-uri ''self'';block-all-mixed-content;font-src ''self''
+        https: data:;frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      X-Dns-Prefetch-Control:
+      - 'off'
+      Expect-Ct:
+      - max-age=0
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - no-referrer
+      X-Xss-Protection:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '74'
+      X-Ratelimit-Reset:
+      - '1678663597'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '292'
+      Etag:
+      - W/"124-rMpzkQgACxn6GAbybMj5DfZZN7A"
+    body:
+      encoding: UTF-8
+      string: '{"docs":[{"_id":"5cd95395de30eff6ebccde56","name":"The Lord of the
+        Rings Series","runtimeInMinutes":558,"budgetInMillions":281,"boxOfficeRevenueInMillions":2917,"academyAwardNominations":30,"academyAwardWins":17,"rottenTomatoesScore":94}],"total":1,"limit":1000,"offset":0,"page":1,"pages":1}'
+  recorded_at: Sun, 12 Mar 2023 23:25:19 GMT
+- request:
+    method: get
+    uri: https://the-one-api.dev/v2/movie/5cd95395de30eff6ebccde56/quote?limit=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer OW4rssr_irBabV-4Avys
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - the-one-api.dev
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 12 Mar 2023 23:25:19 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      Content-Security-Policy:
+      - 'default-src ''self'';base-uri ''self'';block-all-mixed-content;font-src ''self''
+        https: data:;frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      X-Dns-Prefetch-Control:
+      - 'off'
+      Expect-Ct:
+      - max-age=0
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - no-referrer
+      X-Xss-Protection:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '73'
+      X-Ratelimit-Reset:
+      - '1678663597'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '62'
+      Etag:
+      - W/"3e-F9HLY8bCvlnXIPS7lNMVq2JF/t8"
+    body:
+      encoding: UTF-8
+      string: '{"docs":[],"total":0,"limit":10,"offset":0,"page":1,"pages":1}'
+  recorded_at: Sun, 12 Mar 2023 23:25:19 GMT
+recorded_with: VCR 6.1.0

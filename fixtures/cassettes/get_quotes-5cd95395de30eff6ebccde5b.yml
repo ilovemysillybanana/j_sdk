@@ -1,0 +1,147 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://the-one-api.dev/v2/movie/5cd95395de30eff6ebccde5b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer OW4rssr_irBabV-4Avys
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - the-one-api.dev
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 12 Mar 2023 23:14:35 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      Content-Security-Policy:
+      - 'default-src ''self'';base-uri ''self'';block-all-mixed-content;font-src ''self''
+        https: data:;frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      X-Dns-Prefetch-Control:
+      - 'off'
+      Expect-Ct:
+      - max-age=0
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - no-referrer
+      X-Xss-Protection:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '86'
+      X-Ratelimit-Reset:
+      - '1678662997'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '274'
+      Etag:
+      - W/"112-NVaVyMNdyPCxy2GfDss7/ZeeuMQ"
+    body:
+      encoding: UTF-8
+      string: '{"docs":[{"_id":"5cd95395de30eff6ebccde5b","name":"The Two Towers","runtimeInMinutes":179,"budgetInMillions":94,"boxOfficeRevenueInMillions":926,"academyAwardNominations":6,"academyAwardWins":2,"rottenTomatoesScore":96}],"total":1,"limit":1000,"offset":0,"page":1,"pages":1}'
+  recorded_at: Sun, 12 Mar 2023 23:14:35 GMT
+- request:
+    method: get
+    uri: https://the-one-api.dev/v2/movie/5cd95395de30eff6ebccde5b/quote?limit=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer OW4rssr_irBabV-4Avys
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - the-one-api.dev
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 12 Mar 2023 23:14:36 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      Content-Security-Policy:
+      - 'default-src ''self'';base-uri ''self'';block-all-mixed-content;font-src ''self''
+        https: data:;frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      X-Dns-Prefetch-Control:
+      - 'off'
+      Expect-Ct:
+      - max-age=0
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - no-referrer
+      X-Xss-Protection:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '85'
+      X-Ratelimit-Reset:
+      - '1678662997'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2278'
+      Etag:
+      - W/"8e6-/jz+w/6xkbr0uryfeq4NPXI0yTw"
+    body:
+      encoding: UTF-8
+      string: '{"docs":[{"_id":"5cd96e05de30eff6ebcce9b8","dialog":"Sauron''s wrath
+        will be terrible, his retribution swift.","movie":"5cd95395de30eff6ebccde5b","character":"5cd99d4bde30eff6ebccfea0","id":"5cd96e05de30eff6ebcce9b8"},{"_id":"5cd96e05de30eff6ebcce9b9","dialog":"The
+        battle for Helm''s Deep is over. The battle for Middle-earth is about to begin.","movie":"5cd95395de30eff6ebccde5b","character":"5cd99d4bde30eff6ebccfea0","id":"5cd96e05de30eff6ebcce9b9"},{"_id":"5cd96e05de30eff6ebcce9ba","dialog":"All
+        our hopes now lie with two little Hobbits...","movie":"5cd95395de30eff6ebccde5b","character":"5cd99d4bde30eff6ebccfea0","id":"5cd96e05de30eff6ebcce9ba"},{"_id":"5cd96e05de30eff6ebcce9cb","dialog":"...somewhere
+        in the wilderness.","movie":"5cd95395de30eff6ebccde5b","character":"5cd99d4bde30eff6ebccfea0","id":"5cd96e05de30eff6ebcce9cb"},{"_id":"5cd96e05de30eff6ebcce9cc","dialog":"I
+        wonder if we''ll ever be put into songs or tales.","movie":"5cd95395de30eff6ebccde5b","character":"5cd99d4bde30eff6ebccfd0d","id":"5cd96e05de30eff6ebcce9cc"},{"_id":"5cd96e05de30eff6ebcce9cd","dialog":"What?","movie":"5cd95395de30eff6ebccde5b","character":"5cd99d4bde30eff6ebccfc15","id":"5cd96e05de30eff6ebcce9cd"},{"_id":"5cd96e05de30eff6ebcce9ce","dialog":"I
+        wonder if people will ever say, \"Let''s hear about Frodo and the Ring.\"
+        And they''ll say, \"Yes! That''s one of my favourite stories.\" \"Frodo was
+        really courageous, wasn''t he, Dad? \" \"Yes, my boy. The most famousest of
+        Hobbits. And that''s saying a lot.\"","movie":"5cd95395de30eff6ebccde5b","character":"5cd99d4bde30eff6ebccfd0d","id":"5cd96e05de30eff6ebcce9ce"},{"_id":"5cd96e05de30eff6ebcce9cf","dialog":"Well,
+        you''ve left out one of the chief characters: \"Samwise the Brave.\" I want
+        to hear more about Sam.","movie":"5cd95395de30eff6ebccde5b","character":"5cd99d4bde30eff6ebccfc15","id":"5cd96e05de30eff6ebcce9cf"},{"_id":"5cd96e05de30eff6ebcce9d0","dialog":"Frodo
+        wouldn''t have got far without Sam.","movie":"5cd95395de30eff6ebccde5b","character":"5cd99d4bde30eff6ebccfc15","id":"5cd96e05de30eff6ebcce9d0"},{"_id":"5cd96e05de30eff6ebcce9d1","dialog":"Smeagol?","movie":"5cd95395de30eff6ebccde5b","character":"5cd99d4bde30eff6ebccfc15","id":"5cd96e05de30eff6ebcce9d1"}],"total":1009,"limit":10,"offset":0,"page":1,"pages":101}'
+  recorded_at: Sun, 12 Mar 2023 23:14:36 GMT
+recorded_with: VCR 6.1.0
