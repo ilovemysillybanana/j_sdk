@@ -9,7 +9,7 @@ VCR.configure do |config|
 end
 
 RSpec.describe JSdk::LOTR do
-    let(:app) { JSdk::LOTR.new('OW4rssr_irBabV-4Avys') }
+    let(:app) { JSdk::LOTR.new(ENV['ONE_API_KEY']) }
 
     describe "#get_movies()" do
         it "returns an array of movies" do
