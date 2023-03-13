@@ -35,3 +35,11 @@ jobs:
       with:
         token: ${{ secrets.GH_TOKEN }}
         owner: ilovemysillybanana
+
+    - name: Release Gem on RubyGems
+      if: contains(github.ref, 'refs/tags/v')
+      uses: cadwallion/publish-rubygems-action@master
+      env:
+        GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
+        RUBYGEMS_API_KEY: ${{secrets.RUBY_GEMS}}
+        RELEASE_COMMAND: gem build
