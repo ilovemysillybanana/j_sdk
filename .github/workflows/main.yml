@@ -43,5 +43,5 @@ jobs:
         GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
         RUBYGEMS_API_KEY: ${{secrets.RUBY_GEMS}}
         RELEASE_COMMAND: |
-          gem build
-          gem push -k ${{secrets.RUBY_GEMS}}
+          gem build j_sdk
+          gem push j_sdk-0.1.0.gem -k ${{secrets.RUBY_GEMS}}
