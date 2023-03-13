@@ -37,7 +37,7 @@ jobs:
         owner: ilovemysillybanana
 
     - name: Release Gem on RubyGems
-      if: contains(github.ref, 'refs/tags/v')
+      # if: contains(github.ref, 'refs/tags/v')
       uses: cadwallion/publish-rubygems-action@master
       env:
         GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
