@@ -44,4 +44,4 @@ jobs:
         RUBYGEMS_API_KEY: ${{secrets.RUBY_GEMS}}
         RELEASE_COMMAND: |
           gem build
-          gem push -k ${{RUBYGEMS_API_KEY}}
+          gem push -k $RUBYGEMS_API_KEY
