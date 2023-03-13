@@ -33,5 +33,5 @@ jobs:
       # setting this to re-release previous versions
       continue-on-error: true
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.GH_TOKEN }}
         owner: ilovemysillybanana
