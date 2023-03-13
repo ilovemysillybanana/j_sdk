@@ -42,6 +42,14 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
+## Testing
+
+The following command will run all of the test suites. We use VCR/WebMock, so upon first run when adding a new test it'll hit the live api and record the response to our fixtures. Subsequent runs will use those fixtures and be faster.
+
+```
+bundle exec rspec spec/
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/ilovemysillybanana/j_sdk.
