@@ -27,3 +27,11 @@ jobs:
       run: bundle exec rake
     - name: Run the test suite
       run: bundle exec rspec spec/
+
+    - name: Build and publish gem to Github Packages
+      uses: jstastny/publish-gem-to-github@master
+      # setting this to re-release previous versions
+      continue-on-error: true
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        owner: ilovemysillybanana
