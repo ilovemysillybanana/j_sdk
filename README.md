@@ -20,7 +20,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'j_sdk'
+
+lotr_api = JSdk::LOTR.new('API_TOKEN')
+
+# get a list of movies
+movies = lotr_api.get_movies()
+
+# get a movie by id
+id_move = '5cd95395de30eff6ebccde5b'
+movie = lotr_api.get_movie(id_move)
+
+# get list of quotes from movie, default is 10 per page but can be specified by supplying a `limit` and `page` perameter. Default is 10 and 0 respectively.
+quotes = movie.get_quotes()
+```
 
 ## Development
 
