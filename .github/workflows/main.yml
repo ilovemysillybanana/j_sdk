@@ -42,4 +42,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
         RUBYGEMS_API_KEY: ${{secrets.RUBY_GEMS}}
-        RELEASE_COMMAND: gem build
+        RELEASE_COMMAND: |
+          gem build
+          gem push -k ${{RUBYGEMS_API_KEY}}
