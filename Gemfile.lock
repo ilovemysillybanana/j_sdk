@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    j_sdk (0.1.0)
+    j_sdk (0.1.1)
 
 GEM
   remote: https://rubygems.org/
